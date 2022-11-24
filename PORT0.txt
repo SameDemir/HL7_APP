@@ -1,0 +1,5 @@
+PORT0
+Cihaz Adı : sdasda
+Yatak ID : adsdada
+IP : 131.132
+Port : 2000

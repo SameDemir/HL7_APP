@@ -1,0 +1,5 @@
+LAN1
+Cihaz Adı : a
+Yatak ID : 2
+IP : 123.122.144
+Port : 3

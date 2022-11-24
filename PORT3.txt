@@ -1,0 +1,5 @@
+PORT3
+Cihaz Adı : sdasda
+Yatak ID : adsdada
+IP : 123.122.144
+Port : 3000

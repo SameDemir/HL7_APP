@@ -1,0 +1,5 @@
+LAN2
+Cihaz Adı : asdas
+Yatak ID : adsdada
+IP : 131.132
+Port : 2000

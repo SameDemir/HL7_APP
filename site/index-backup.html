@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medron Technology</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+	<script>
+    $(document).ready (function () {
+      $('#ipAddress').mask('0ZZ.0ZZ.0ZZ.0ZZ', { translation: { 'Z': { pattern: /[0-9]/, optional: true } } });
+    }) 
+		$.getJSON("/getmyip1", function(data) {
+      console.log(data);
+      $("#lanAddress1").html(data.Ethernet);
+		})
+  </script>
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Connection Page</h1>
+      <form action="/" method="POST">
+		<div>
+			<h1>Device IP Port 1 </h1>
+			<h2 id="lanAddress1"></h2>
+		  </div>
+        <div class="form-group">
+          <label for="firstName">Destination IP</label>
+          <input type="text" id="ipAddress" required class="form-control" name="destinationIp" aria-describedby="emailHelp" placeholder="Please enter the IP address.">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Port Number</label>
+          <input type="text" class="form-control" name="portNumber" required aria-describedby="emailHelp" placeholder="Please enter the Port number." >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </body>
+</html>

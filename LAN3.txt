@@ -1,0 +1,1 @@
+{"Cihaz_adi":"sdasda","Yatak_adi":"adsdada","IP":"131.132","PORT":"2000"}
